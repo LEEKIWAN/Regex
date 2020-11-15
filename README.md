@@ -19,10 +19,10 @@ who is who
 ------------------------------------------
 ### . : 와일드 카드와 비슷하며, 문자하나를 나눔 ... 일 경우 문자 3개씩 나눔
 ```
-Regular expressions are powerFul!!!
+Regular expressions are powerful!!!
 ```
   > ##### Regular Expression : .\
-  > > Matches:	***<u>Regular expressions are powerFul!!!</u>***
+  > > Matches:	***<u>Regular expressions are powerful!!!</u>***
   > ##### Regular Expression : ......  (. 이 6개 이므로 6개 단위로 문자열 끊고 6개로 안나누어지는 나머지는 버림)
   > > Matches:	***Regular expressions are powerf***ul!!!
 ---------------------------------------------
@@ -52,5 +52,23 @@ How do you do?
 > ##### Regular Expression : [oyu][yow]
 >
 > > Matches:	H***ow*** do ***yo***u do
+---------------------------------------------
+### [ - ] : 스퀘어브라켓 안에 하이픈은 범위를 나타내는 표현
+
+```
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+```
+
+
+> ##### Regular Expression : [c-k]
+> >Matches:	ab***cdefghijk***lmnopqrstuvwxyz
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+>
+> ##### Regular Expression : [2-6]
+>
+> > Matches:	Hab***cdefghijk***lmnopqrstuvwxyz
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789
+
 
 
