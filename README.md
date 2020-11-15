@@ -62,13 +62,13 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
 
 
 > ##### Regular Expression : [c-k]
-> >Matches:	ab***cdefghijk***lmnopqrstuvwxyz
-            ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+> > Matches: ab***cdefghijk***lmnopqrstuvwxyz<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
 >
 > ##### Regular Expression : [2-6]
 >
-> > Matches:	Hab***cdefghijk***lmnopqrstuvwxyz
-            ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789
+> > Matches: ab***cdefghijk***lmnopqrstuvwxyz<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789
 
 
 
