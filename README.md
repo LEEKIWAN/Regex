@@ -79,5 +79,18 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
 > > Matches: ***abcdefghijklmnopqrstuvwxyz***<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;***ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789***
 
+---------------------------------------------
+### ( | ) : | or 뜻이며 () 안에 문자중에서 매칭되는 문자르 검색
+```
+Monday Tuesday Friday
+```
 
+> ##### Regular Expression : (on|ues|rida)
+> > Matches: M***on***day T***ues***day F***rida***y
+>
+> ##### Regular Expression : (Mon|Tues|Fri)day
+>
+> > Matches: ***Monday Tuesday Friday***
 
+> ##### Regular Expression : ..(nd|esd|id)ay
+> > Matches: ***Monday Tuesday Friday***
