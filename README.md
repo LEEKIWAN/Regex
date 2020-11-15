@@ -53,8 +53,8 @@ How do you do?
 >
 > > Matches:	H***ow*** do ***yo***u do
 ---------------------------------------------
-### [ - ] : 스퀘어브라켓 안에 하이픈은 범위를 나타내는 표현
-
+### [ - ] : 하이픈은 범위를 나타내는 표현
+### [^ ] : 괄호안에 ^은 부정의 의미로 ^다음에 나오는 문자들을 제외한다.
 ```
 abcdefghijklmnopqrstuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
@@ -69,6 +69,24 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
 >
 > > Matches: ab***cdefghijk***lmnopqrstuvwxyz<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789
+
+> ##### Regular Expression : [c-k]
+> > Matches: ab***cdefghijk***lmnopqrstuvwxyz<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+>
+> ##### Regular Expression : [2-6]
+>
+> > Matches: ab***cdefghijk***lmnopqrstuvwxyz<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789
+
+> ##### Regular Expression : [^abcd]
+> > Matches: abcd***efghijklmnopqrstuvwxyz***<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;***ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789***
+>
+> ##### Regular Expression : [^2-6]
+>
+> > Matches: ***abcdefghijklmnopqrstuvwxyz***<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;***ABCDEFGHIJKLMNOPQRSTUVWXYZ 01***23456***789***
 
 
 
