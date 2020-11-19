@@ -91,6 +91,33 @@ Monday Tuesday Friday
 > ##### Regular Expression : (Mon|Tues|Fri)day
 >
 > > Matches: ***Monday Tuesday Friday***
-
 > ##### Regular Expression : ..(nd|esd|id)ay
 > > Matches: ***Monday Tuesday Friday***
+
+### * : * 앞에 나오는 문자가 없을거나 1개 이상일 경우
+### + : + 앞에 나오는 문자가 1개 이상일 경우
+### ? : ? 앞에 나오는 문자가 없거나 1개 일 경우
+```
+aabc abc bc
+```
+
+> ##### Regular Expression : a*b
+> > Matches: ***aab***c ***ab***c ***b***c
+> ##### Regular Expression : a+b
+> > Matches: ***aab***c ***ab***c bc
+> ##### Regular Expression : a?b
+> > Matches: a***ab***c ***ab***c ***b***c
+
+### { } : {숫자} 괄호 앞에 나오는 문자가 숫자만큼 반복
+### { , } : {앞숫자, 뒷숫자} 괄호 앞에 나오는 문자가 앞숫자 이상 뒷숫자 이하 만큼 반복
+### * + ? 키워드들은 { } 키워드로 변경할수있다.
+```
+One ring to bring them all and in the darkness bind them
+```
+
+> ##### Regular Expression :.{5}
+> > Matches: ***One ring to bring them all and in the darkness bind the***m
+> ##### Regular Expression : [els]{1,3}
+> > Matches: On***e*** ring to bring th***e***m a***ll*** and in th***e*** darkn***ess*** bind th***e***m
+> ##### Regular Expression : a?b
+> > Matches: a***ab***c ***ab***c ***b***c
